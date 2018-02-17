@@ -10,8 +10,8 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <organization>
-        <name>Example Company</name>
-        <url>http://www.example.com/</url>
+        <name>RNP</name>
+        <url>http://www.rnp.br/</url>
     </organization>
 
     <name>basic</name>
@@ -44,6 +44,13 @@
             <artifactId>atlassian-spring-scanner-runtime</artifactId>
             <version>${atlassian.spring.scanner.version}</version>
             <scope>runtime</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.atlassian.sal/sal-api -->
+        <dependency>
+            <groupId>com.atlassian.sal</groupId>
+            <artifactId>sal-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
