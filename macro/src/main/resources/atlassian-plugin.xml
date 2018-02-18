@@ -20,5 +20,9 @@
 
         <context>macro</context>
     </web-resource>
-    
+    <xhtml-macro name="rnp-macro" class="br.rnp.confluence.plugins.macro.RNPMacro" key='rnp-macro'>
+      <description key="rnp.macro.desc"/>
+      <category name="formatting"/>
+      <parameters/>
+    </xhtml-macro>    
 </atlassian-plugin>
