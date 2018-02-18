@@ -30,4 +30,8 @@ public class MyPluginComponentImpl implements MyPluginComponent
         
         return "myComponent";
     }
+
+    public long sum(long a, long b) {
+      return a + b;
+    }
 }

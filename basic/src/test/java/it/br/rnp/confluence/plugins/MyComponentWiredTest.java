@@ -25,4 +25,9 @@ public class MyComponentWiredTest
     {
         assertEquals("names do not match!", "myComponent:" + applicationProperties.getDisplayName(),myPluginComponent.getName());
     }
+    @Test
+    public void testSum()
+    {
+        assertEquals("sum incorrect!", 2L, myPluginComponent.sum( 1, 1));
+    }
 }

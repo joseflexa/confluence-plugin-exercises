@@ -14,4 +14,10 @@ public class MyComponentUnitTest
         MyPluginComponent component = new MyPluginComponentImpl(null);
         assertEquals("names do not match!", "myComponent",component.getName());
     }
+    @Test
+    public void testSum() 
+    {
+      MyPluginComponent component = new MyPluginComponentImpl(null);
+      assertEquals("incorrect sum!", 2L, component.sum(1, 1));
+    }
 }
