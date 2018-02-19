@@ -1,0 +1,36 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="bold"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="bold-resources" name="bold Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="bold.css" location="/css/bold.css"/>
+        <resource type="download" name="bold.js" location="/js/bold.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>bold</context>
+    </web-resource>
+
+
+    <xhtml-macro name="birthday" class="br.rnp.confluence.plugins.bold.BirthdayMacro" key="birthday">
+      <description key="rnp.macro.birthday.desc"/>
+      <category name="formatting"/>
+        <parameters>
+             <parameter name="month" type="int">
+                 <option key="showNameInPlaceholder" value="true" />
+                 <option key="showValueInPlaceholder" value="true" />
+            </parameter>
+        </parameters>
+    </xhtml-macro>
+
+</atlassian-plugin>
