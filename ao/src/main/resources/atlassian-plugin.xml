@@ -20,5 +20,14 @@
 
         <context>ao</context>
     </web-resource>
-    
+
+
+    <ao key="ao-module">
+        <description>The module configuring the Active Objects service used by this plugin</description>
+        <entity>br.rnp.confluence.plugins.ao.Birthday</entity>
+    </ao>
+    <servlet name="Birthday Servlet" class="br.rnp.confluence.plugins.ao.BirthdayServlet" key="birthday-list">
+        <description>A servlet to add and list birthdays</description>
+        <url-pattern>/birthday/list</url-pattern>
+    </servlet>
 </atlassian-plugin>
