@@ -32,6 +32,18 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>com.atlassian.activeobjects</groupId>
+            <artifactId>activeobjects-plugin</artifactId>
+            <version>LATEST</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.collections</groupId>
+            <artifactId>google-collections</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>com.atlassian.plugin</groupId>
             <artifactId>atlassian-spring-scanner-annotation</artifactId>
             <version>${atlassian.spring.scanner.version}</version>
