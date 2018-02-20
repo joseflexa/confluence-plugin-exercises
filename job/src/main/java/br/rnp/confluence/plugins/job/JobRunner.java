@@ -13,5 +13,6 @@ public class JobRunner implements com.atlassian.scheduler.JobRunner
     public JobRunnerResponse runJob(JobRunnerRequest var1) {
         System.out.println("RNP JOB EXECUTED at " + new java.util.Date());
         return JobRunnerResponse.success();
+
     }
 }

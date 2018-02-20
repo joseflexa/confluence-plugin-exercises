@@ -9,18 +9,6 @@
 
     <!-- add our i18n resource -->
     <resource type="i18n" name="i18n" location="job"/>
-    
-    <!-- add our web resources -->
-    <web-resource key="job-resources" name="job Web Resources">
-        <dependency>com.atlassian.auiplugin:ajs</dependency>
-        
-        <resource type="download" name="job.css" location="/css/job.css"/>
-        <resource type="download" name="job.js" location="/js/job.js"/>
-        <resource type="download" name="images/" location="/images"/>
-
-        <context>job</context>
-    </web-resource>
-
 
     <job-config name="My job" key="myJobId">
         <job key="myJobRunner" perClusterJob="true" clusteredOnly="true"/>
